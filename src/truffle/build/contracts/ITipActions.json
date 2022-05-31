@@ -1,0 +1,215 @@
+{
+  "contractName": "ITipActions",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "participate",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getReward",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "start",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"participate\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"start\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"Permissionless actions for Tip\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getReward()\":{\"notice\":\"Gets reward allocated as your share after game done\"},\"participate()\":{\"notice\":\"Joins shuffle event\"},\"start()\":{\"notice\":\"Lets a game begin\"}},\"notice\":\"Contains methods that can be called by anyone\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITipActions.sol\":\"ITipActions\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITipActions.sol\":{\"keccak256\":\"0xa96d2429289b4debc3f8fb861146d579d26a198631865fb720bc2e1ca664ab1a\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://01803791bce9cc1d805c7165e2a8c82c0bb88d870ca8825e5b9a6f69446a2f25\",\"dweb:/ipfs/QmT6SfqUJB2WSXzyhKfVQBFves5rwvzxKnfpyT4TWR7CVX\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLISENCED\r\npragma solidity >=0.5.0;\r\n\r\n/// @title Permissionless actions for Tip\r\n/// @notice Contains methods that can be called by anyone\r\ninterface ITipActions {\r\n    /// @notice Joins shuffle event\r\n    /// @dev \r\n    function participate() external payable;\r\n\r\n    /// @notice Gets reward allocated as your share after game done\r\n    /// @dev \r\n    function getReward() external;\r\n\r\n    /// @notice Lets a game begin\r\n    /// @dev \r\n    function start() external payable;\r\n}",
+  "sourcePath": "C:\\Users\\kento.maruyama\\Desktop\\Activities\\10. Web3 and BlockChain Lab\\Tip\\src\\truffle\\contracts\\interfaces\\ITipActions.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITipActions.sol",
+    "exportedSymbols": {
+      "ITipActions": [
+        672
+      ]
+    },
+    "id": 673,
+    "license": "UNLISENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 658,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:24:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITipActions",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 659,
+          "nodeType": "StructuredDocumentation",
+          "src": "68:102:3",
+          "text": "@title Permissionless actions for Tip\n @notice Contains methods that can be called by anyone"
+        },
+        "fullyImplemented": false,
+        "id": 672,
+        "linearizedBaseContracts": [
+          672
+        ],
+        "name": "ITipActions",
+        "nameLocation": "180:11:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 660,
+              "nodeType": "StructuredDocumentation",
+              "src": "199:46:3",
+              "text": "@notice Joins shuffle event\n @dev "
+            },
+            "functionSelector": "d11711a2",
+            "id": 663,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "participate",
+            "nameLocation": "260:11:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 661,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:2:3"
+            },
+            "returnParameters": {
+              "id": 662,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "290:0:3"
+            },
+            "scope": 672,
+            "src": "251:40:3",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 664,
+              "nodeType": "StructuredDocumentation",
+              "src": "299:78:3",
+              "text": "@notice Gets reward allocated as your share after game done\n @dev "
+            },
+            "functionSelector": "3d18b912",
+            "id": 667,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getReward",
+            "nameLocation": "392:9:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 665,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "401:2:3"
+            },
+            "returnParameters": {
+              "id": 666,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "412:0:3"
+            },
+            "scope": 672,
+            "src": "383:30:3",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 668,
+              "nodeType": "StructuredDocumentation",
+              "src": "421:44:3",
+              "text": "@notice Lets a game begin\n @dev "
+            },
+            "functionSelector": "be9a6555",
+            "id": 671,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "start",
+            "nameLocation": "480:5:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 669,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "485:2:3"
+            },
+            "returnParameters": {
+              "id": 670,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:0:3"
+            },
+            "scope": 672,
+            "src": "471:34:3",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 673,
+        "src": "170:338:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:468:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T13:05:25.301Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "Permissionless actions for Tip",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getReward()": {
+        "notice": "Gets reward allocated as your share after game done"
+      },
+      "participate()": {
+        "notice": "Joins shuffle event"
+      },
+      "start()": {
+        "notice": "Lets a game begin"
+      }
+    },
+    "notice": "Contains methods that can be called by anyone",
+    "version": 1
+  }
+}

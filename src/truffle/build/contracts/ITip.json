@@ -1,0 +1,468 @@
+{
+  "contractName": "ITip",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "GetReward",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Participate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Start",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Withdraw",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "defaultDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "defaultTimeLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "donation",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getReward",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "goal",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "participate",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "participant",
+          "type": "address"
+        }
+      ],
+      "name": "stakes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "start",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stat",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "isActive",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "loser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "winner",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isWinnerTakesAll",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "largestStake",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timeLimit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "downTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[],\"name\":\"GetReward\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Participate\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Start\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"defaultDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"defaultTimeLimit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"donation\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"goal\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"participate\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"participant\",\"type\":\"address\"}],\"name\":\"stakes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"start\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stat\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"isActive\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"loser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"winner\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isWinnerTakesAll\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"largestStake\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timeLimit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"downTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"stakes(address)\":{\"params\":{\"participant\":\"The address of participant\"}},\"stat()\":{\"returns\":{\"isActive\":\"true means game is active. false means in-active. balance The balance of this game. loser The loser address. winner The winner address. isWinnerTakesAll The win types. largestStake The lagest stake in this game. timeLimit Time Limit of this game. downTime Cool down time after game ends.\"}}},\"title\":\"Permissionless actions for Tip\",\"version\":1},\"userdoc\":{\"events\":{\"GetReward()\":{\"notice\":\"Emitted when user tries to get his share\"},\"Participate()\":{\"notice\":\"Emitted when user joins the game\"},\"Start()\":{\"notice\":\"Emitted by #start when game begins\"},\"Withdraw()\":{\"notice\":\"Emitted when contract owner withdraws the benefits\"}},\"kind\":\"user\",\"methods\":{\"defaultDuration()\":{\"notice\":\"Default duration for next game kicks\"},\"defaultTimeLimit()\":{\"notice\":\"Default time limit\"},\"donation()\":{\"notice\":\"Returns benefit of tip contract\"},\"getReward()\":{\"notice\":\"Gets reward allocated as your share after game done\"},\"goal()\":{\"notice\":\"Default loot size\"},\"owner()\":{\"notice\":\"The address who deployed this contract\"},\"participate()\":{\"notice\":\"Joins shuffle event\"},\"stakes(address)\":{\"notice\":\"Returns the stake of the participant\"},\"start()\":{\"notice\":\"Lets a game begin\"},\"stat()\":{\"notice\":\"Returns game stat\"},\"withdraw()\":{\"notice\":\"Only contract owner can call this to get benefits\"}},\"notice\":\"Contains methods that can be called by anyone\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITip.sol\":\"ITip\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITip.sol\":{\"keccak256\":\"0x969f950c4c9b53f3302a553c602a23fa71f4e0ea657347e55f04e3ee267c888b\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://5051733f97f281ffa44c463a6b6d3e0b096003522b5b857612401964a4b3d895\",\"dweb:/ipfs/QmPkUhi932wJCfKzBxZJResMDWsTBBu3b8NFbp8XFDgwBr\"]},\"project:/contracts/interfaces/ITipActions.sol\":{\"keccak256\":\"0xa96d2429289b4debc3f8fb861146d579d26a198631865fb720bc2e1ca664ab1a\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://01803791bce9cc1d805c7165e2a8c82c0bb88d870ca8825e5b9a6f69446a2f25\",\"dweb:/ipfs/QmT6SfqUJB2WSXzyhKfVQBFves5rwvzxKnfpyT4TWR7CVX\"]},\"project:/contracts/interfaces/ITipEvents.sol\":{\"keccak256\":\"0xbe529e7c1aad1da22e50921544641fd41f22be74f4eea767bb992af2a3a15b8a\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://c82539179f43e5667327b064d00ed8a635ccb96d48496ad952cf3767f28a3dda\",\"dweb:/ipfs/QmNw876RaZQ9YRXXEYXRPYQGzgBhcpjqMxcZFDW1hNr38L\"]},\"project:/contracts/interfaces/ITipImmutables.sol\":{\"keccak256\":\"0x0165f6400cdbdbf6daef52099b1ceee031abb3ec5de1fdb2355dca0f6bf3515c\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://e0e32436b190c4410770bd1047e77082240aecff363fd27bc830ae1611e6ada3\",\"dweb:/ipfs/QmU8QUajG3sVsFufsfQX4nsdwbP8EPgN1vdfVXsadtejXn\"]},\"project:/contracts/interfaces/ITipOwnerActions.sol\":{\"keccak256\":\"0x0e0867d6ba2d6669a541ea87bb202321706a129dd3afa4486f0b4b15cb44b16f\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://bfee56a3009535a9510371fb0c7c60d8a598e569b0d25800726e26b6aaca1b01\",\"dweb:/ipfs/QmWC9jSWZBnynXzwDCtoAND9FxhdJfuPDTs7HXh63ZbTKS\"]},\"project:/contracts/interfaces/ITipState.sol\":{\"keccak256\":\"0x606eeee034ccc9df400fc9db097e0e7e49b237d1a19d609a4d5c6e9b91bba453\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://ebb16ddc4cf5ec12f6d52018a64a4aefc32cc775842f57535b1b5746b22c66ce\",\"dweb:/ipfs/QmbAYMFRfkA8e57k8mRUqmVW9LDCgEfNYBtpEDFWakTFcK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLISENCED\r\npragma solidity >=0.5.0;\r\n\r\nimport './ITipActions.sol';\r\nimport './ITipEvents.sol';\r\nimport './ITipState.sol';\r\nimport './ITipOwnerActions.sol';\r\nimport './ITipImmutables.sol';\r\n\r\n/// @title Permissionless actions for Tip\r\n/// @notice Contains methods that can be called by anyone\r\ninterface ITip is\r\n    ITipActions,\r\n    ITipOwnerActions,\r\n    ITipEvents,\r\n    ITipState,\r\n    ITipImmutables\r\n{\r\n\r\n}",
+  "sourcePath": "C:\\Users\\kento.maruyama\\Desktop\\Activities\\10. Web3 and BlockChain Lab\\Tip\\src\\truffle\\contracts\\interfaces\\ITip.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITip.sol",
+    "exportedSymbols": {
+      "ITip": [
+        656
+      ],
+      "ITipActions": [
+        672
+      ],
+      "ITipEvents": [
+        688
+      ],
+      "ITipImmutables": [
+        716
+      ],
+      "ITipOwnerActions": [
+        730
+      ],
+      "ITipState": [
+        762
+      ]
+    },
+    "id": 657,
+    "license": "UNLISENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 639,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:24:2"
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/ITipActions.sol",
+        "file": "./ITipActions.sol",
+        "id": 640,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 657,
+        "sourceUnit": 673,
+        "src": "68:27:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/ITipEvents.sol",
+        "file": "./ITipEvents.sol",
+        "id": 641,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 657,
+        "sourceUnit": 689,
+        "src": "97:26:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/ITipState.sol",
+        "file": "./ITipState.sol",
+        "id": 642,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 657,
+        "sourceUnit": 763,
+        "src": "125:25:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/ITipOwnerActions.sol",
+        "file": "./ITipOwnerActions.sol",
+        "id": 643,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 657,
+        "sourceUnit": 731,
+        "src": "152:32:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/ITipImmutables.sol",
+        "file": "./ITipImmutables.sol",
+        "id": 644,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 657,
+        "sourceUnit": 717,
+        "src": "186:30:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 646,
+              "name": "ITipActions",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 672,
+              "src": "345:11:2"
+            },
+            "id": 647,
+            "nodeType": "InheritanceSpecifier",
+            "src": "345:11:2"
+          },
+          {
+            "baseName": {
+              "id": 648,
+              "name": "ITipOwnerActions",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 730,
+              "src": "363:16:2"
+            },
+            "id": 649,
+            "nodeType": "InheritanceSpecifier",
+            "src": "363:16:2"
+          },
+          {
+            "baseName": {
+              "id": 650,
+              "name": "ITipEvents",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 688,
+              "src": "386:10:2"
+            },
+            "id": 651,
+            "nodeType": "InheritanceSpecifier",
+            "src": "386:10:2"
+          },
+          {
+            "baseName": {
+              "id": 652,
+              "name": "ITipState",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 762,
+              "src": "403:9:2"
+            },
+            "id": 653,
+            "nodeType": "InheritanceSpecifier",
+            "src": "403:9:2"
+          },
+          {
+            "baseName": {
+              "id": 654,
+              "name": "ITipImmutables",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 716,
+              "src": "419:14:2"
+            },
+            "id": 655,
+            "nodeType": "InheritanceSpecifier",
+            "src": "419:14:2"
+          }
+        ],
+        "canonicalName": "ITip",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 645,
+          "nodeType": "StructuredDocumentation",
+          "src": "220:102:2",
+          "text": "@title Permissionless actions for Tip\n @notice Contains methods that can be called by anyone"
+        },
+        "fullyImplemented": false,
+        "id": 656,
+        "linearizedBaseContracts": [
+          656,
+          716,
+          762,
+          688,
+          730,
+          672
+        ],
+        "name": "ITip",
+        "nameLocation": "332:4:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 657,
+        "src": "322:119:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:401:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T13:05:25.276Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "stakes(address)": {
+        "params": {
+          "participant": "The address of participant"
+        }
+      },
+      "stat()": {
+        "returns": {
+          "isActive": "true means game is active. false means in-active. balance The balance of this game. loser The loser address. winner The winner address. isWinnerTakesAll The win types. largestStake The lagest stake in this game. timeLimit Time Limit of this game. downTime Cool down time after game ends."
+        }
+      }
+    },
+    "title": "Permissionless actions for Tip",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "GetReward()": {
+        "notice": "Emitted when user tries to get his share"
+      },
+      "Participate()": {
+        "notice": "Emitted when user joins the game"
+      },
+      "Start()": {
+        "notice": "Emitted by #start when game begins"
+      },
+      "Withdraw()": {
+        "notice": "Emitted when contract owner withdraws the benefits"
+      }
+    },
+    "kind": "user",
+    "methods": {
+      "defaultDuration()": {
+        "notice": "Default duration for next game kicks"
+      },
+      "defaultTimeLimit()": {
+        "notice": "Default time limit"
+      },
+      "donation()": {
+        "notice": "Returns benefit of tip contract"
+      },
+      "getReward()": {
+        "notice": "Gets reward allocated as your share after game done"
+      },
+      "goal()": {
+        "notice": "Default loot size"
+      },
+      "owner()": {
+        "notice": "The address who deployed this contract"
+      },
+      "participate()": {
+        "notice": "Joins shuffle event"
+      },
+      "stakes(address)": {
+        "notice": "Returns the stake of the participant"
+      },
+      "start()": {
+        "notice": "Lets a game begin"
+      },
+      "stat()": {
+        "notice": "Returns game stat"
+      },
+      "withdraw()": {
+        "notice": "Only contract owner can call this to get benefits"
+      }
+    },
+    "notice": "Contains methods that can be called by anyone",
+    "version": 1
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "contractName": "ITipImmutables",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "goal",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "defaultTimeLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "defaultDuration",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"defaultDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"defaultTimeLimit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"goal\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"Tip state that never changes\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"defaultDuration()\":{\"notice\":\"Default duration for next game kicks\"},\"defaultTimeLimit()\":{\"notice\":\"Default time limit\"},\"goal()\":{\"notice\":\"Default loot size\"},\"owner()\":{\"notice\":\"The address who deployed this contract\"}},\"notice\":\"These parameters are fixed forever\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITipImmutables.sol\":\"ITipImmutables\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITipImmutables.sol\":{\"keccak256\":\"0x0165f6400cdbdbf6daef52099b1ceee031abb3ec5de1fdb2355dca0f6bf3515c\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://e0e32436b190c4410770bd1047e77082240aecff363fd27bc830ae1611e6ada3\",\"dweb:/ipfs/QmU8QUajG3sVsFufsfQX4nsdwbP8EPgN1vdfVXsadtejXn\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLISENCED\r\npragma solidity >=0.5.0;\r\n\r\n/// @title Tip state that never changes\r\n/// @notice These parameters are fixed forever\r\ninterface ITipImmutables {\r\n    /// @notice The address who deployed this contract\r\n    function owner() external view returns (address);\r\n\r\n    /// @notice Default loot size\r\n    function goal() external view returns (uint256);\r\n\r\n    /// @notice Default time limit\r\n    function defaultTimeLimit() external view returns (uint);\r\n\r\n    /// @notice Default duration for next game kicks\r\n    function defaultDuration() external view returns(uint);\r\n}",
+  "sourcePath": "C:\\Users\\kento.maruyama\\Desktop\\Activities\\10. Web3 and BlockChain Lab\\Tip\\src\\truffle\\contracts\\interfaces\\ITipImmutables.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITipImmutables.sol",
+    "exportedSymbols": {
+      "ITipImmutables": [
+        716
+      ]
+    },
+    "id": 717,
+    "license": "UNLISENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 690,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:24:5"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITipImmutables",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 691,
+          "nodeType": "StructuredDocumentation",
+          "src": "68:89:5",
+          "text": "@title Tip state that never changes\n @notice These parameters are fixed forever"
+        },
+        "fullyImplemented": false,
+        "id": 716,
+        "linearizedBaseContracts": [
+          716
+        ],
+        "name": "ITipImmutables",
+        "nameLocation": "167:14:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 692,
+              "nodeType": "StructuredDocumentation",
+              "src": "189:50:5",
+              "text": "@notice The address who deployed this contract"
+            },
+            "functionSelector": "8da5cb5b",
+            "id": 697,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nameLocation": "254:5:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 693,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "259:2:5"
+            },
+            "returnParameters": {
+              "id": 696,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 695,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 697,
+                  "src": "285:7:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 694,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "285:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "284:9:5"
+            },
+            "scope": 716,
+            "src": "245:49:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 698,
+              "nodeType": "StructuredDocumentation",
+              "src": "302:29:5",
+              "text": "@notice Default loot size"
+            },
+            "functionSelector": "40193883",
+            "id": 703,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "goal",
+            "nameLocation": "346:4:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 699,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "350:2:5"
+            },
+            "returnParameters": {
+              "id": 702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 701,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 703,
+                  "src": "376:7:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 700,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:9:5"
+            },
+            "scope": 716,
+            "src": "337:48:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 704,
+              "nodeType": "StructuredDocumentation",
+              "src": "393:30:5",
+              "text": "@notice Default time limit"
+            },
+            "functionSelector": "3db494cb",
+            "id": 709,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "defaultTimeLimit",
+            "nameLocation": "438:16:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 705,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "454:2:5"
+            },
+            "returnParameters": {
+              "id": 708,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 707,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 709,
+                  "src": "480:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 706,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "480:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "479:6:5"
+            },
+            "scope": 716,
+            "src": "429:57:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 710,
+              "nodeType": "StructuredDocumentation",
+              "src": "494:48:5",
+              "text": "@notice Default duration for next game kicks"
+            },
+            "functionSelector": "2af7e2ea",
+            "id": 715,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "defaultDuration",
+            "nameLocation": "557:15:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 711,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "572:2:5"
+            },
+            "returnParameters": {
+              "id": 714,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 713,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 715,
+                  "src": "597:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 712,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "597:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "596:6:5"
+            },
+            "scope": 716,
+            "src": "548:55:5",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 717,
+        "src": "157:449:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:566:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T13:05:25.309Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "Tip state that never changes",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "defaultDuration()": {
+        "notice": "Default duration for next game kicks"
+      },
+      "defaultTimeLimit()": {
+        "notice": "Default time limit"
+      },
+      "goal()": {
+        "notice": "Default loot size"
+      },
+      "owner()": {
+        "notice": "The address who deployed this contract"
+      }
+    },
+    "notice": "These parameters are fixed forever",
+    "version": 1
+  }
+}

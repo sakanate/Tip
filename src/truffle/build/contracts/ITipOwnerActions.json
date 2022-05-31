@@ -1,0 +1,206 @@
+{
+  "contractName": "ITipOwnerActions",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "donation",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"donation\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"title\":\"Permissioned Tip Actions\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"donation()\":{\"notice\":\"Returns benefit of tip contract\"},\"withdraw()\":{\"notice\":\"Only contract owner can call this to get benefits\"}},\"notice\":\"Contains Tip methods that may only be called by the contract owner\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITipOwnerActions.sol\":\"ITipOwnerActions\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITipOwnerActions.sol\":{\"keccak256\":\"0x0e0867d6ba2d6669a541ea87bb202321706a129dd3afa4486f0b4b15cb44b16f\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://bfee56a3009535a9510371fb0c7c60d8a598e569b0d25800726e26b6aaca1b01\",\"dweb:/ipfs/QmWC9jSWZBnynXzwDCtoAND9FxhdJfuPDTs7HXh63ZbTKS\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLISENCED\r\npragma solidity >=0.5.0;\r\n\r\n/// @title Permissioned Tip Actions\r\n/// @notice Contains Tip methods that may only be called by the contract owner\r\ninterface ITipOwnerActions {\r\n    /// @notice Only contract owner can call this to get benefits\r\n    function withdraw() external;\r\n\r\n    /// @notice Returns benefit of tip contract\r\n    function donation() external view returns (uint256);\r\n}",
+  "sourcePath": "C:\\Users\\kento.maruyama\\Desktop\\Activities\\10. Web3 and BlockChain Lab\\Tip\\src\\truffle\\contracts\\interfaces\\ITipOwnerActions.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITipOwnerActions.sol",
+    "exportedSymbols": {
+      "ITipOwnerActions": [
+        730
+      ]
+    },
+    "id": 731,
+    "license": "UNLISENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 718,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:24:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITipOwnerActions",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 719,
+          "nodeType": "StructuredDocumentation",
+          "src": "68:117:6",
+          "text": "@title Permissioned Tip Actions\n @notice Contains Tip methods that may only be called by the contract owner"
+        },
+        "fullyImplemented": false,
+        "id": 730,
+        "linearizedBaseContracts": [
+          730
+        ],
+        "name": "ITipOwnerActions",
+        "nameLocation": "195:16:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 720,
+              "nodeType": "StructuredDocumentation",
+              "src": "219:61:6",
+              "text": "@notice Only contract owner can call this to get benefits"
+            },
+            "functionSelector": "3ccfd60b",
+            "id": 723,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "295:8:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 721,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "303:2:6"
+            },
+            "returnParameters": {
+              "id": 722,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "314:0:6"
+            },
+            "scope": 730,
+            "src": "286:29:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 724,
+              "nodeType": "StructuredDocumentation",
+              "src": "323:43:6",
+              "text": "@notice Returns benefit of tip contract"
+            },
+            "functionSelector": "8edeb15d",
+            "id": 729,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "donation",
+            "nameLocation": "381:8:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 725,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "389:2:6"
+            },
+            "returnParameters": {
+              "id": 728,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 727,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 729,
+                  "src": "415:7:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 726,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "415:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "414:9:6"
+            },
+            "scope": 730,
+            "src": "372:52:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 731,
+        "src": "185:242:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:387:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T13:05:25.339Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "title": "Permissioned Tip Actions",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "donation()": {
+        "notice": "Returns benefit of tip contract"
+      },
+      "withdraw()": {
+        "notice": "Only contract owner can call this to get benefits"
+      }
+    },
+    "notice": "Contains Tip methods that may only be called by the contract owner",
+    "version": 1
+  }
+}

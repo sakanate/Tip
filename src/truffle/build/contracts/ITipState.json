@@ -1,0 +1,512 @@
+{
+  "contractName": "ITipState",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "stat",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "isActive",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "loser",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "winner",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isWinnerTakesAll",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "largestStake",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timeLimit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "downTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "participant",
+          "type": "address"
+        }
+      ],
+      "name": "stakes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"participant\",\"type\":\"address\"}],\"name\":\"stakes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stat\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"isActive\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"loser\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"winner\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isWinnerTakesAll\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"largestStake\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"timeLimit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"downTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"stakes(address)\":{\"params\":{\"participant\":\"The address of participant\"}},\"stat()\":{\"returns\":{\"isActive\":\"true means game is active. false means in-active. balance The balance of this game. loser The loser address. winner The winner address. isWinnerTakesAll The win types. largestStake The lagest stake in this game. timeLimit Time Limit of this game. downTime Cool down time after game ends.\"}}},\"title\":\"Tip state that can read\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"stakes(address)\":{\"notice\":\"Returns the stake of the participant\"},\"stat()\":{\"notice\":\"Returns game stat\"}},\"notice\":\"These methods compose Tip's state to read\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITipState.sol\":\"ITipState\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITipState.sol\":{\"keccak256\":\"0x606eeee034ccc9df400fc9db097e0e7e49b237d1a19d609a4d5c6e9b91bba453\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://ebb16ddc4cf5ec12f6d52018a64a4aefc32cc775842f57535b1b5746b22c66ce\",\"dweb:/ipfs/QmbAYMFRfkA8e57k8mRUqmVW9LDCgEfNYBtpEDFWakTFcK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLISENCED\r\npragma solidity >=0.5.0;\r\n\r\n/// @title Tip state that can read\r\n/// @notice These methods compose Tip's state to read\r\ninterface ITipState {\r\n    /// @notice Returns game stat\r\n    /// @return isActive true means game is active. false means in-active.\r\n    /// balance The balance of this game.\r\n    /// loser The loser address.\r\n    /// winner The winner address.\r\n    /// isWinnerTakesAll The win types.\r\n    /// largestStake The lagest stake in this game.\r\n    /// timeLimit Time Limit of this game.\r\n    /// downTime Cool down time after game ends.\r\n    function stat()\r\n        external\r\n        view\r\n        returns (\r\n            bool isActive,\r\n            uint256 balance,\r\n            address loser,\r\n            address winner,\r\n            bool isWinnerTakesAll,\r\n            uint256 largestStake,\r\n            uint timeLimit,\r\n            uint downTime\r\n        );\r\n\r\n    /// @notice Returns the stake of the participant\r\n    /// @param participant The address of participant\r\n    function stakes(address participant) external view returns (uint256);\r\n}",
+  "sourcePath": "C:\\Users\\kento.maruyama\\Desktop\\Activities\\10. Web3 and BlockChain Lab\\Tip\\src\\truffle\\contracts\\interfaces\\ITipState.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITipState.sol",
+    "exportedSymbols": {
+      "ITipState": [
+        762
+      ]
+    },
+    "id": 763,
+    "license": "UNLISENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 732,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:24:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITipState",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 733,
+          "nodeType": "StructuredDocumentation",
+          "src": "68:91:7",
+          "text": "@title Tip state that can read\n @notice These methods compose Tip's state to read"
+        },
+        "fullyImplemented": false,
+        "id": 762,
+        "linearizedBaseContracts": [
+          762
+        ],
+        "name": "ITipState",
+        "nameLocation": "169:9:7",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 734,
+              "nodeType": "StructuredDocumentation",
+              "src": "186:406:7",
+              "text": "@notice Returns game stat\n @return isActive true means game is active. false means in-active.\n balance The balance of this game.\n loser The loser address.\n winner The winner address.\n isWinnerTakesAll The win types.\n largestStake The lagest stake in this game.\n timeLimit Time Limit of this game.\n downTime Cool down time after game ends."
+            },
+            "functionSelector": "0435a745",
+            "id": 753,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stat",
+            "nameLocation": "607:4:7",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 735,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "611:2:7"
+            },
+            "returnParameters": {
+              "id": 752,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 737,
+                  "mutability": "mutable",
+                  "name": "isActive",
+                  "nameLocation": "683:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "678:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 736,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "678:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 739,
+                  "mutability": "mutable",
+                  "name": "balance",
+                  "nameLocation": "714:7:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "706:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 738,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "706:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 741,
+                  "mutability": "mutable",
+                  "name": "loser",
+                  "nameLocation": "744:5:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "736:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 740,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "736:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 743,
+                  "mutability": "mutable",
+                  "name": "winner",
+                  "nameLocation": "772:6:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "764:14:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 742,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "764:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 745,
+                  "mutability": "mutable",
+                  "name": "isWinnerTakesAll",
+                  "nameLocation": "798:16:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "793:21:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 744,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "793:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 747,
+                  "mutability": "mutable",
+                  "name": "largestStake",
+                  "nameLocation": "837:12:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "829:20:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 746,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "829:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 749,
+                  "mutability": "mutable",
+                  "name": "timeLimit",
+                  "nameLocation": "869:9:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "864:14:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 748,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "864:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 751,
+                  "mutability": "mutable",
+                  "name": "downTime",
+                  "nameLocation": "898:8:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 753,
+                  "src": "893:13:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 750,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "893:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "663:254:7"
+            },
+            "scope": 762,
+            "src": "598:320:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 754,
+              "nodeType": "StructuredDocumentation",
+              "src": "926:103:7",
+              "text": "@notice Returns the stake of the participant\n @param participant The address of participant"
+            },
+            "functionSelector": "16934fc4",
+            "id": 761,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stakes",
+            "nameLocation": "1044:6:7",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 757,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 756,
+                  "mutability": "mutable",
+                  "name": "participant",
+                  "nameLocation": "1059:11:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 761,
+                  "src": "1051:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 755,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1051:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1050:21:7"
+            },
+            "returnParameters": {
+              "id": 760,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 759,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 761,
+                  "src": "1095:7:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 758,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1095:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1094:9:7"
+            },
+            "scope": 762,
+            "src": "1035:69:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 763,
+        "src": "159:948:7",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:1067:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T13:05:25.344Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "stakes(address)": {
+        "params": {
+          "participant": "The address of participant"
+        }
+      },
+      "stat()": {
+        "returns": {
+          "isActive": "true means game is active. false means in-active. balance The balance of this game. loser The loser address. winner The winner address. isWinnerTakesAll The win types. largestStake The lagest stake in this game. timeLimit Time Limit of this game. downTime Cool down time after game ends."
+        }
+      }
+    },
+    "title": "Tip state that can read",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "stakes(address)": {
+        "notice": "Returns the stake of the participant"
+      },
+      "stat()": {
+        "notice": "Returns game stat"
+      }
+    },
+    "notice": "These methods compose Tip's state to read",
+    "version": 1
+  }
+}

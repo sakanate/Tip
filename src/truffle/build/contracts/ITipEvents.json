@@ -1,0 +1,212 @@
+{
+  "contractName": "ITipEvents",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "GetReward",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Participate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Start",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Withdraw",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[],\"name\":\"GetReward\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Participate\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Start\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[],\"name\":\"Withdraw\",\"type\":\"event\"}],\"devdoc\":{\"events\":{\"Start()\":{\"details\":\"Paricipate/IncreaseTime/GetReward cannot be emitted before game starts\"}},\"kind\":\"dev\",\"methods\":{},\"title\":\"Events emitted by Tip\",\"version\":1},\"userdoc\":{\"events\":{\"GetReward()\":{\"notice\":\"Emitted when user tries to get his share\"},\"Participate()\":{\"notice\":\"Emitted when user joins the game\"},\"Start()\":{\"notice\":\"Emitted by #start when game begins\"},\"Withdraw()\":{\"notice\":\"Emitted when contract owner withdraws the benefits\"}},\"kind\":\"user\",\"methods\":{},\"notice\":\"Contains all events emitted by Tip\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITipEvents.sol\":\"ITipEvents\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITipEvents.sol\":{\"keccak256\":\"0xbe529e7c1aad1da22e50921544641fd41f22be74f4eea767bb992af2a3a15b8a\",\"license\":\"UNLISENCED\",\"urls\":[\"bzz-raw://c82539179f43e5667327b064d00ed8a635ccb96d48496ad952cf3767f28a3dda\",\"dweb:/ipfs/QmNw876RaZQ9YRXXEYXRPYQGzgBhcpjqMxcZFDW1hNr38L\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLISENCED\r\npragma solidity >=0.5.0;\r\n\r\n/// @title Events emitted by Tip\r\n/// @notice Contains all events emitted by Tip\r\ninterface ITipEvents {\r\n    /// @notice Emitted by #start when game begins\r\n    /// @dev Paricipate/IncreaseTime/GetReward cannot be emitted before game starts\r\n    event Start();\r\n\r\n    /// @notice Emitted when user joins the game\r\n    event Participate();\r\n\r\n    /// @notice Emitted when user tries to get his share\r\n    event GetReward();\r\n\r\n    /// @notice Emitted when contract owner withdraws the benefits\r\n    event Withdraw();\r\n}",
+  "sourcePath": "C:\\Users\\kento.maruyama\\Desktop\\Activities\\10. Web3 and BlockChain Lab\\Tip\\src\\truffle\\contracts\\interfaces\\ITipEvents.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITipEvents.sol",
+    "exportedSymbols": {
+      "ITipEvents": [
+        688
+      ]
+    },
+    "id": 689,
+    "license": "UNLISENCED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 674,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:24:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITipEvents",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 675,
+          "nodeType": "StructuredDocumentation",
+          "src": "68:82:4",
+          "text": "@title Events emitted by Tip\n @notice Contains all events emitted by Tip"
+        },
+        "fullyImplemented": true,
+        "id": 688,
+        "linearizedBaseContracts": [
+          688
+        ],
+        "name": "ITipEvents",
+        "nameLocation": "160:10:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 676,
+              "nodeType": "StructuredDocumentation",
+              "src": "178:131:4",
+              "text": "@notice Emitted by #start when game begins\n @dev Paricipate/IncreaseTime/GetReward cannot be emitted before game starts"
+            },
+            "eventSelector": "1b55ba3aa851a46be3b365aee5b5c140edd620d578922f3e8466d2cbd96f954b",
+            "id": 678,
+            "name": "Start",
+            "nameLocation": "321:5:4",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 677,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "326:2:4"
+            },
+            "src": "315:14:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 679,
+              "nodeType": "StructuredDocumentation",
+              "src": "337:44:4",
+              "text": "@notice Emitted when user joins the game"
+            },
+            "eventSelector": "9b883b8db722ca7c02b6a9c09c1f42ac2b1296a688f80d5caf30bee882bf9d01",
+            "id": 681,
+            "name": "Participate",
+            "nameLocation": "393:11:4",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 680,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "404:2:4"
+            },
+            "src": "387:20:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 682,
+              "nodeType": "StructuredDocumentation",
+              "src": "415:52:4",
+              "text": "@notice Emitted when user tries to get his share"
+            },
+            "eventSelector": "30f3363cf7e01dd67fec9a0b1544fbde4d5ae360a5c594485c83124f32bd10ec",
+            "id": 684,
+            "name": "GetReward",
+            "nameLocation": "479:9:4",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 683,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "488:2:4"
+            },
+            "src": "473:18:4"
+          },
+          {
+            "anonymous": false,
+            "documentation": {
+              "id": 685,
+              "nodeType": "StructuredDocumentation",
+              "src": "499:62:4",
+              "text": "@notice Emitted when contract owner withdraws the benefits"
+            },
+            "eventSelector": "57ea89b6814fccbbe8728fa89cc8e6b5477e559b2a34e946e105b11112e94b58",
+            "id": 687,
+            "name": "Withdraw",
+            "nameLocation": "573:8:4",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 686,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "581:2:4"
+            },
+            "src": "567:17:4"
+          }
+        ],
+        "scope": 689,
+        "src": "150:437:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:547:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-31T13:05:25.305Z",
+  "devdoc": {
+    "events": {
+      "Start()": {
+        "details": "Paricipate/IncreaseTime/GetReward cannot be emitted before game starts"
+      }
+    },
+    "kind": "dev",
+    "methods": {},
+    "title": "Events emitted by Tip",
+    "version": 1
+  },
+  "userdoc": {
+    "events": {
+      "GetReward()": {
+        "notice": "Emitted when user tries to get his share"
+      },
+      "Participate()": {
+        "notice": "Emitted when user joins the game"
+      },
+      "Start()": {
+        "notice": "Emitted by #start when game begins"
+      },
+      "Withdraw()": {
+        "notice": "Emitted when contract owner withdraws the benefits"
+      }
+    },
+    "kind": "user",
+    "methods": {},
+    "notice": "Contains all events emitted by Tip",
+    "version": 1
+  }
+}
